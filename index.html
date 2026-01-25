@@ -111,14 +111,22 @@
                 
                 <!-- Left Column: Photo (Span 4) -->
                 <div class="md:col-span-4 relative">
-                    <!-- Photo container: matches height of right column on desktop -->
-                    <div class="relative w-full h-96 md:h-full rounded-3xl">
-                        <!-- Glow Effect -->
-                        <div class="absolute -inset-1 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
-                        <!-- Image -->
-                        <img src="profile_photo.JPG" alt="Zemian Ke" class="relative w-full h-full object-cover rounded-3xl border-4 border-white shadow-xl bg-gray-200">
-                    </div>
+                  <!-- Photo container with fixed aspect ratio -->
+                  <div class="relative w-full aspect-[3/4] rounded-3xl">
+                    
+                    <!-- Glow Effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
+                    
+                    <!-- Image -->
+                    <img
+                      src="profile_photo.JPG"
+                      alt="Zemian Ke"
+                      class="relative w-full h-full object-cover rounded-3xl border-4 border-white shadow-xl bg-gray-200"
+                    >
+                    
+                  </div>
                 </div>
+
 
                 <!-- Right Column: Content (Span 8) -->
                 <div class="md:col-span-8 flex flex-col gap-12">
